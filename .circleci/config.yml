@@ -14,7 +14,6 @@ jobs:
     steps:
       - checkout
       - run: echo "A more familiar hi"
-      - run: sleep 5
   testb:
     docker:
       - image: circleci/ruby:2.4.1
