@@ -10,7 +10,7 @@ jobs:
       
   testa:
     docker:
-      - image: circleci/ruby:2.4.1
+      - image: circleci/
     steps:
       - checkout
       - run: echo "A more familiar hi"
@@ -25,7 +25,7 @@ jobs:
       
   deploy:
     docker:
-      - image: circleci/ruby:2.4.1
+      - image: circleci/
     steps:
       - checkout
       - run: echo "A final goodbye"
