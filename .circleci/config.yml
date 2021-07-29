@@ -51,7 +51,7 @@ jobs:
           at: my_workspace
 
       - run: |
-          echo "Deploying message!"
+          echo "Deploying!"
           cat my_workspace/echo-output
 
 workflows:
