@@ -69,7 +69,7 @@ workflows:
           requires:
             - testa
             - testb
-  build_and_test:
+  workflow_pttwo:
     jobs:
       - build
       - testa:
