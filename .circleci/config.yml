@@ -69,3 +69,17 @@ workflows:
           requires:
             - testa
             - testb
+  build_and_test:
+    jobs:
+      - build
+      - testa:
+          requires:
+            - build 
+      - testb:
+          requires:
+            - build 
+      - deploy:
+          requires:
+            - testa
+            - testb
+        
