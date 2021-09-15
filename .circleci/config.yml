@@ -1,12 +1,12 @@
 version: 2
 jobs:
   build:
-#     circleci_ip_ranges: true
+    circleci_ip_ranges: true
     docker:
       - image: circleci/ruby:2.4.1
     steps:
       - checkout
-#       - run: curl -s http://whatismyip.akamai.com
+      - run: curl -s http://whatismyip.akamai.com
       - run: mkdir -p my_workspace
       - run: echo "Hello World" > my_workspace/echo-output
       - persist_to_workspace:
@@ -26,11 +26,11 @@ jobs:
       - run: cat my_workspace/echo-output
           
   testb:
-#     circleci_ip_ranges: true
+    circleci_ip_ranges: true
     docker:
       - image: circleci/ruby:2.4.1
     steps:
-#       - run: curl -s http://whatismyip.akamai.com
+      - run: curl -s http://whatismyip.akamai.com
       - attach_workspace:
           # Must be absolute path or relative path from working_directory
           at: my_workspace
