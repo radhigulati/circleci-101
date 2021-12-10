@@ -38,7 +38,7 @@ jobs:
           at: my_workspace
 
       - run: |
-          if [[ $(cat my_workspace/echo-output) == "Hello World" ]]; then
+          if [[ $(cat my_workspace/echo-output) == "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." ]]; then
             echo "It worked!";
           else
             echo "Nope!"; exit 1
