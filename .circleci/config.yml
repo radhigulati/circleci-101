@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run: curl -s http://whatismyip.akamai.com
       - run: mkdir -p my_workspace
-      - run: echo "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." > my_workspace/echo-output
+      - run: echo "Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." > my_workspace/echo-output
       - persist_to_workspace:
           # Must be an absolute path, or relative path from working_directory
           root: my_workspace
