@@ -17,8 +17,10 @@ jobs:
             - echo-output      
   testa:
     circleci_ip_ranges: true
-    docker:
-      - image: circleci/ruby:2.4.1
+#     docker:
+#       - image: circleci/ruby:2.4.1
+    macos:
+      xcode: 12.5.1
     steps:
       - run: curl -s http://whatismyip.akamai.com
       - attach_workspace:
